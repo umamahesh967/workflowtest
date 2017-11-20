@@ -3,18 +3,16 @@ FROM java:8-jre
 FROM maven
 
 # Set the working directory to /app
-WORKDIR /workflow
+WORKDIR /workflowte
 
 # Copy the current directory contents into the container at /app
-ADD . /workflow
+ADD . /workflowte
 
 # Make port 80 available to the world outside this container
 EXPOSE 8121
 
 # Run app.py when the container launches
-CMD ["mvn", "clean" ,"package"]
 
-CMD ["mvn", "spring-boot:run"]
 
 
 
