@@ -12,4 +12,4 @@ ADD . /workflowte
 EXPOSE 8121
 
 # Run app.py when the container launches
-CMD ["mvn", "spring-boot:run"]d
+CMD ["mvn", "spring-boot:run"]
