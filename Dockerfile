@@ -14,6 +14,8 @@ EXPOSE 8121
 # Run app.py when the container launches
 CMD ["mvn", "clean" ,"package"]
 
+CMD ["mvn", "spring-boot:run"]
+
 
 
 
