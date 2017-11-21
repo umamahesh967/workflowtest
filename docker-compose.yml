@@ -4,10 +4,8 @@ services:
     image: testworkflow:1
     build: ./
     environment:
-      HOMESE: $HOMER
+      HOMESE: $DISABLE_AUTH
       NAME: "UMA"
-    env_file:
-      - .env
     ports:
       - 8121:8121
     

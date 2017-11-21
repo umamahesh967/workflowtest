@@ -16,8 +16,9 @@ public class TestJarFileApplication {
 	// go to localhost:8121
 	@GetMapping("/")
 	public String home() {
-		System.out.println(System.getenv("HOMESE"));
-		System.out.println(System.getenv("HOM"));
-		return System.getenv("WORDPRESS_DB_HOST");
+		
+
+		return System.getenv("WORDPRESS_DB_HOSTURL")+":"+System.getenv("WORDPRESS_DB_PASSWORD");
+		
 	}
 }

@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        DISABLE_AUTH = 'true'
+        DB_ENGINE    = 'sqlite'
+    }
 
     stages {
  
@@ -12,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker-compose -f docker-compose.yml up -d --build --remove-orphans -e DB_ENGINE  = sqlite'
+                sh 'docker-compose  up -d'
             }
         }
     }
