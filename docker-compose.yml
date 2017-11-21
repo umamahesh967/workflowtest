@@ -4,7 +4,7 @@ services:
     image: umamaheshdocker/testworkflow:1
     build: ./
     environment:
-      HOMESE: $HOMER
+      HOMESE: $DISABLE_AUTH
       NAME: "UMA"
     ports:
       - 8121:8121
