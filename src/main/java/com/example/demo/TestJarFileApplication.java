@@ -18,6 +18,6 @@ public class TestJarFileApplication {
 	public String home() {
 		System.out.println(System.getenv("HOME"));
 		System.out.println(System.getenv("HOM"));
-		return "vsndjvsabjv h";
+		return System.getenv("HOME").toString();
 	}
 }
