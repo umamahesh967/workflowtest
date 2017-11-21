@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker-compose  run -d -e DB_ENGINE=sqlite  '
+                sh 'docker-compose  run -e DB_ENGINE=sqlite'
             }
         }
     }
