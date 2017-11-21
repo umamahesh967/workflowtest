@@ -16,6 +16,6 @@ public class TestJarFileApplication {
 	// go to localhost:8121
 	@GetMapping("/")
 	public String home() {
-		return System.out.println(System.getenv("HOME")).toString();
+		return System.getenv("HOME").toString();
 	}
 }
