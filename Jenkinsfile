@@ -1,9 +1,6 @@
 pipeline {
     agent any
-    environment {
-        
         DB_ENGINE    = 'sqlite'
-    }
     stages {
  
         stage('Build'){
@@ -15,7 +12,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker-compose -f docker-compose.yml up -d --build --remove-orphans'
+                sh 'docker-compose -f docker-compose.yml up -d --build --remove-orphans -e DB_ENGINE    = 'sqlite''
             }
         }
     }
