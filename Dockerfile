@@ -14,8 +14,4 @@ EXPOSE 8121
 ENV HOM="Hiiiiiiiiiiiiiiii sekhar"
 
 # Run app.py when the container launches
-
-
-
-
-
+CMD ["mvn", "spring-boot:run"]
