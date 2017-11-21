@@ -1,6 +1,6 @@
 pipeline {
     agent any
-        DB_ENGINE    = 'sqlite'
+
     stages {
  
         stage('Build'){
