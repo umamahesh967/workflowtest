@@ -1,9 +1,9 @@
 version: "2"
 services:
   web:
-    environment:
-      HOME: $HOM
     image: umamaheshdocker/testworkflow:1
+    environment:
+     HOME: $HOM
     build: ./
     ports:
       - 8121:8121
