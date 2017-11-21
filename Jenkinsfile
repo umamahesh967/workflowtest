@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker-compose -f docker-compose.yml up -d --build --remove-orphans -e DB_ENGINE  = sqlite'
+                sh 'docker-compose -f docker-compose.yml up -d -e DB_ENGINE=sqlite --build --remove-orphans '
             }
         }
     }
