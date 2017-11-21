@@ -20,6 +20,6 @@ public class TestJarFileApplication {
 		System.out.println(System.getenv("HOM"));
 		return System.getenv("HOMESE").toString() +":"+
 			System.getenv("NAME")+";"+
-			System.getenv("HOM") +":"+System.getenv("HOMER");
+			System.getenv("HOMER")+":"+System.getenv("DISABLE_AUTH")+":"+System.getenv("DB_ENGINE");
 	}
 }
