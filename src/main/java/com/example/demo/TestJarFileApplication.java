@@ -18,6 +18,6 @@ public class TestJarFileApplication {
 	public String home() {
 		System.out.println(System.getenv("HOMESE"));
 		System.out.println(System.getenv("HOM"));
-		return System.getenv("DISABLE_AUTH")+":"+System.getenv("DB_ENGINE");
+		return System.getenv("WORDPRESS_DB_HOST");
 	}
 }

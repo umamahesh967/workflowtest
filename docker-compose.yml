@@ -1,11 +1,13 @@
 version: "2"
 services:
   web:
-    image: umamaheshdocker/testworkflow:1
+    image: testworkflow:1
     build: ./
     environment:
       HOMESE: $HOMER
       NAME: "UMA"
+    env_file:
+      - .env
     ports:
       - 8121:8121
     
