@@ -4,7 +4,8 @@ services:
     image: umamaheshdocker/testworkflow:1
     build: ./
     environment:
-     HOME: $HOM
+      HOME: $HOM
+      NAME: "UMA"
     ports:
       - 8121:8121
     
