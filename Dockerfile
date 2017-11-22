@@ -13,5 +13,7 @@ EXPOSE 8121
 
 ENV HOMER="Hiiiiiiiiiiiiiiii sekhar"
 
-# Run app.py when the container launches
-CMD ["mvn", "spring-boot:run"]
+# Run app.py when the container 
+CMD ["mvn", "clean", "package -DskipTests"]
+# CMD ["mvn", "spring-boot:run"]
+CMD ["java", "-jar", "target/*.jar"]
