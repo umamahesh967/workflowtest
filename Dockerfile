@@ -16,4 +16,4 @@ ENV HOMER="Hiiiiiiiiiiiiiiii sekhar"
 # Run app.py when the container 
 CMD ["mvn", "clean", "package -DskipTests"]
 # CMD ["mvn", "spring-boot:run"]
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "target/test.jar"]
