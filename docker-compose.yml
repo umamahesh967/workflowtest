@@ -9,7 +9,7 @@ services:
       - 8121:8121
       
    goutham:
-    image: testworkflow:1
+    image: testworow:1
     build: ./
     environment:
       NAME: "UMA"
