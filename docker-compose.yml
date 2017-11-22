@@ -1,25 +1,24 @@
      version: "2"
      services:
        web:
-       image: testworkflow:1
-       build: ./
-       environment:
+        image: testworkflow:1
+        build: ./
+        environment:
          NAME: "UMA"
-       ports:
+        ports:
          - 8121:8121      
-     web:
-       image: testworkflow:1
-       build: ./
-       environment:
+       web:
+        image: testworkflow:1
+        build: ./
+        environment:
          NAME: "UMA"
-       ports:
-         - 8121:8121 
-     web:
-       image: testworkflow:1
-       build: ./
-       environment:
-         NAME: "UMA"
-       ports:
-         - 8121:8121       
-
+        ports:
+          - 8121:8121 
+       web:
+        image: testworkflow:1
+        build: ./
+        environment:
+          NAME: "UMA"
+        ports:
+          - 8121:8121       
 
