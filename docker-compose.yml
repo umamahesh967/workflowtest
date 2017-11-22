@@ -7,18 +7,4 @@
          NAME: "UMA"
         ports:
          - 8121:8121      
-       web:
-        image: testworkflow:1
-        build: ./
-        environment:
-         NAME: "UMA"
-        ports:
-          - 8121:8121 
-       web:
-        image: testworkflow:1
-        build: ./
-        environment:
-          NAME: "UMA"
-        ports:
-          - 8121:8121       
-
+    
