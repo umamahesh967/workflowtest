@@ -7,7 +7,7 @@ services:
       NAME: "UMA"
     ports:
       - 8121:8121      
-   goutham:
+  goutham:
     image: testworow:1
     build: ./
     environment:
