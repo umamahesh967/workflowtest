@@ -4,9 +4,16 @@ services:
     image: testworkflow:1
     build: ./
     environment:
-      HOMESE: $DISABLE_AUTH
       NAME: "UMA"
     ports:
       - 8121:8121
+      
+   goutham:
+    image: testworkflow:1
+    build: ./
+    environment:
+      NAME: "UMA"
+    ports:
+      - 8131:8121   
     
 
