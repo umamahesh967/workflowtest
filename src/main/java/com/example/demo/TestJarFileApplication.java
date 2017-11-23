@@ -18,8 +18,7 @@ public class TestJarFileApplication {
 	public String home() {
 		
 
-		return System.getenv("WORDPRESS_DB_HOSTURL")+":"+System.getenv("WORDPRESS_DB_PASSWORD")+":"
-			+System.getenv("DISABLE_AUTH");
+		return "Hii UmaMahesh";
 		
 	}
 }
