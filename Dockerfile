@@ -6,7 +6,7 @@ FROM maven
 WORKDIR /deploytesting
 
 # Copy the current directory contents into the container at /app
-ADD . /8abfb82929bc 
+ADD . /deploytesting 
 
 # Make port 80 available to the world outside this container
 EXPOSE 8121
