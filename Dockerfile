@@ -3,10 +3,10 @@ FROM java:8-jre
 FROM maven
 
 # Set the working directory to /app
-WORKDIR /workflowte
+WORKDIR /deploytesting
 
 # Copy the current directory contents into the container at /app
-ADD . /workflowte
+ADD . /8abfb82929bc 
 
 # Make port 80 available to the world outside this container
 EXPOSE 8121
@@ -14,6 +14,6 @@ EXPOSE 8121
 ENV HOMER="Hiiiiiiiiiiiiiiii sekhar"
 
 # Run app.py when the container 
-CMD ["mvn", "clean", "package -DskipTests"]
-# CMD ["mvn", "spring-boot:run"]
-CMD ["java", "-jar", "target/test.jar"]
+#CMD ["mvn", "clean", "package -DskipTests"]
+CMD ["mvn", "spring-boot:run"]
+#CMD ["java", "-jar", "target/test.jar"]
