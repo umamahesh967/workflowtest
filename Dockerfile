@@ -1,6 +1,5 @@
 # Use an official  runtime as a parent image
 FROM java:8-jre
-FROM maven
 
 # Set the working directory to /app
 WORKDIR /deploytesting
